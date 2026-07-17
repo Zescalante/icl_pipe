@@ -1,0 +1,16 @@
+name: research
+channels:
+  - conda-forge
+dependencies:
+  - conda-forge::photutils
+  - matplotlib
+  - numpy
+  - conda-forge::notebook
+  - scipy
+  - pandas
+  - python
+  - astropy
+  - ipywidgets
+  - jupyter
+  - scikit-learn
+  - scikit-image
