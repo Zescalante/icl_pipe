@@ -22,20 +22,20 @@ A full technical write-up of methodology, validation, and limitations is availab
 
 The pipeline follows these broad steps:
 
-1. **Gather the required inputs** - Create softlinks to input datasets, bitmasks and catalogs produced by the LoVoCCS pipeline.
-2. **Compute metrics** — redshift, angular scale, Galactic extinction, etc. We need a sense of distance to the target and the conditions in this region of the sky, as well as coordinates on which to center our analysis. The pipeline makes use of measured sources magnitude deviations from `lovoccs_pipe` to generate a set of input errors to the data, to be propagated throughout the analysis.
-3. **Iterative Modeling Loop** We want to minimize flux contributions from non-ICL sources in order to isolate the ICL. To do this we:
+1. **Gather the required inputs** — Create softlinks to input datasets, bitmasks and catalogs produced by the LoVoCCS pipeline.
+2. **Compute metrics** — Redshift, angular scale, Galactic extinction, etc. We need a sense of distance to the target and the conditions in this region of the sky, as well as coordinates on which to center our analysis. The pipeline makes use of measured sources magnitude deviations from `lovoccs_pipe` to generate a set of input errors to the data, to be propagated throughout the analysis.
+3. **Iterative modeling loop** — We want to minimize flux contributions from non-ICL sources in order to isolate the ICL. To do this we:
    - Run Source Extractor to unmask the central cluster region.
    - Perform 1D + 2D isophotal modeling of the brightest cluster galaxy (BCG).
    - Subtract the synthetic BCG model from the original image to isolate the ICL.
    - Re-run Source Extractor to further mask contaminating sources previously obscured by the ICL.
-4. **Correct the results** We apply corrections to the ICL profiles to account for systematics like cosmological surface brightness dimming and extinction. This results in more trustworthy profiles.
+4. **Correct the results** — We apply corrections to the ICL profiles to account for systematics like cosmological surface brightness dimming and extinction. This results in more trustworthy profiles.
 5. **Generate final products** from the radial intensity profile and iteratively masked images. All products are return with propagated errors for confidence estimation:
    - Surface brightness contours mapping the spatial ICL distribution in each band.
    - Corrected 1D surface brightness profiles and color profiles.
    - Fractional luminosity contribution of ICL to total cluster light.
 
-Results were validated against independent ICL studies of both the same target clusters, and clusters of similar redshift and dynamical environment.
+Results were validated against independent ICL studies of both the same target clusters, and clusters of similar redshift and dynamical environment. A secondary method of measurement was utilized for comparison, applying the [transfer-learning based ML model from Canepa et al.](https://github.com/lpcan/MICL/tree/v1.0).
 
 ---
 
@@ -45,7 +45,7 @@ Results were validated against independent ICL studies of both the same target c
 .
 ├── src/                  # Core pipeline modules
 ├── config/               # Configuration files
-├── notebooks/            # Exploratory analysis & compiling results
+├── notebooks/            # Exploratory analysis & some results
 ├── scripts/              # SLURM job submission scripts
 ├── environment.yml       # Python environment specification
 ├── dissertation.pdf      # Full methodology, validation, and discussion
