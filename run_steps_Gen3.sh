@@ -10,7 +10,7 @@ CLUSTER_NAME='A85'
 # == VARIABLES == #
 
 AUTO_PIPELINE_DIR="/gpfs/data/idellant/zescalan_research/icl_measurement/automatic_pipeline_gen3_mock" 
-TEMPLATE_DIR="${AUTO_PIPELINE_DIR}/processing_step_templates_mock"
+TEMPLATE_DIR="${AUTO_PIPELINE_DIR}/scripts"
 CLUSTER_DIR="/gpfs/data/idellant/zescalan_research/icl_measurement/${CLUSTER_NAME}" 
 PROCESSING_STEP_DIR="${CLUSTER_DIR}/processing_step"
 
@@ -47,7 +47,7 @@ echo "Running STEP 0: create_output"
 mkdir -p ${CLUSTER_DIR}/processing_step
 mkdir -p ${CLUSTER_DIR}/slurm_outputs
 
-cp -a ${AUTO_PIPELINE_DIR}/python_scripts/. ${CLUSTER_DIR}/python_scripts
+cp -a ${AUTO_PIPELINE_DIR}/src/. ${CLUSTER_DIR}/src
 
 
 echo "Making necessary symlinks"
@@ -84,8 +84,8 @@ icl_measurement () {
 	
 }
 
+# == STEPS ==  #
 
 create_output
-
 
 # icl_measurement "sm" "dr4"
