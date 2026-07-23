@@ -76,7 +76,7 @@ bash run_steps_Gen3.sh
 
 ## Example Output
 
-![Contour Image](A3822_g_sb_contours_fullres_cropped_final.jpg)
+<img src="A3822_r_sb_contours_fullres_irg_cropped_final_1.jpg" width="45%" /> <img src="A3822_surface_brightness_1d_final.jpg" width="45%" />
 
 ---
 
