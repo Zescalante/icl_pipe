@@ -8,11 +8,11 @@ A pipeline for measuring the multi-band spatial distribution and luminous contri
 
 ## Overview
 
-Intracluster light is a diffuse, low surface brightness light bound to a galaxy cluster's dark matter halo. Since it traces the cluster's gravitational potential, ICL is a candidate luminous probe of a cluster's dark matter distribution, but establishing that correlation requires precise, calibrated measurements from deep, wide-field imaging.
+Intracluster light is a diffuse, low surface brightness collection of stars bound to a galaxy cluster's dark matter halo. Since it traces the cluster's gravitational potential, ICL is a candidate luminous probe of a cluster's dark matter distribution, but establishing that correlation requires precise, calibrated measurements from deep, wide-field imaging.
 
 This project addresses that measurement problem using an **iterative composite modeling approach**, built from the ground up on top of data products from the [LoVoCCS data reduction pipeline](https://github.com/astroenglert/lovoccs_pipe). The primary goal is to test whether ICL correlates reliably with host cluster halo mass across a subset of LoVoCCS clusters.
 
-The pipeline was designed to slot directly into the structure of the LoVoCCS pipeline (as of 2025), with the intent of eventual adoption as one of its primary data reduction steps, and was developed and run on [OSCAR](https://docs.ccv.brown.edu/oscar?q=distribut), Brown University's HPC cluster.
+The pipeline was designed to slot directly into the structure of the [lovoccs_pipe](https://github.com/astroenglert/lovoccs_pipe) (as of 2025), with the intent of eventual adoption as one of its primary data reduction steps, and was developed and run on [OSCAR](https://docs.ccv.brown.edu/oscar?q=distribut), Brown University's HPC cluster.
 
 A full technical write-up of methodology, validation, and limitations is available in my [dissertation](https://repository.library.brown.edu/studio/item/bdr:fntvtnsr/).
 
@@ -47,8 +47,8 @@ Results were validated against independent ICL studies of both the same target c
 ├── config/               # Configuration files
 ├── notebooks/            # Exploratory analysis & some results
 ├── scripts/              # SLURM job submission scripts
+├── visuals/              # Some result plots
 ├── environment.yml       # Python environment specification
-├── dissertation.pdf      # Full methodology, validation, and discussion
 ├── run_steps_Gen3.sh     # Base shell script from which to copy templated per-cluster scripts and run ICL measurement
 └── README.md
 ```
@@ -76,13 +76,13 @@ bash run_steps_Gen3.sh
 
 ## Example Output
 
-<img src="A3822_r_sb_contours_fullres_irg_cropped_final_1.jpg" width="39%" /> <img src="A3822_surface_brightness_1d_final.jpg" width="51%" />
+<img src="visuals/A3822_r_sb_contours_fullres_irg_cropped_final_1.jpg" width="39%" /> <img src="visuals/A3822_surface_brightness_1d_final.jpg" width="51%" />
 
 ---
 
 ## Results
 
-With this measurement technique, I find ICL contributions ranging ~13-40% of the total cluster luminosity. Past composite modeling studies find ICL fractions of order ~10-30%, in broad agreement with mine. Aggregation of results across my studied clusters reveals a positive correlation of ICL luminosity with weak-lensing mass, and no significant trend of ICL fraction (L_ICL/L_total) with cluster redshift or weak-lensing derived cluster mass. See the [dissertation](dissertation.pdf) for full results, limitations, and proposed improvements.
+With this measurement technique, I find ICL contributions ranging ~13-40% of the total cluster luminosity. Past composite modeling studies find ICL fractions of order ~10-30%, in broad agreement with mine. Aggregation of results across my studied clusters reveals a positive correlation of ICL luminosity with weak-lensing mass, and no significant trend of ICL fraction (L_ICL/L_total) with cluster redshift or weak-lensing derived cluster mass. See the [dissertation](https://repository.library.brown.edu/studio/item/bdr:fntvtnsr/) for full results, limitations, and proposed improvements.
 
 ---
 
