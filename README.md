@@ -76,7 +76,7 @@ bash run_steps_Gen3.sh
 
 ## Example Output
 
-*(Add a figure here. an SB contour map or radial profile plot.)*
+![Contour Image](A3822_g_sb_contours_fullres_cropped_final.jpg)
 
 ---
 
