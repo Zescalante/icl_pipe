@@ -2,7 +2,7 @@
 
 _Author: Zacharias Escalante_
 
-A pipeline for measuring the multi-band spatial distribution and luminous contribution of **intracluster light (ICL)** in galaxy clusters observed by the LoVoCCS survey. This repo is a condensed, standalone version of the pipeline built for a large portion of my Ph.D. dissertation work in astrophysics at Brown University.
+A pipeline for measuring the multi-band spatial distribution and luminous contribution of **intracluster light (ICL)** in galaxy clusters observed by the LoVoCCS survey. This repo is a condensed, standalone version of the pipeline built for a large portion of my Ph.D. dissertation work in observational cosmology at Brown University.
 
 ---
 
