@@ -12,7 +12,7 @@ Intracluster light is a diffuse, low surface brightness collection of stars boun
 
 This project addresses that measurement problem using an **iterative composite modeling approach**, built from the ground up on top of data products from the [LoVoCCS data reduction pipeline](https://github.com/astroenglert/lovoccs_pipe). The primary goal is to test whether ICL correlates reliably with host cluster halo mass across a subset of LoVoCCS clusters.
 
-The pipeline was designed to slot directly into the structure of the `lovoccs_pipe` (as of 2025), with the intent of eventual adoption as one of its primary data reduction steps, and was developed and run on [OSCAR](https://docs.ccv.brown.edu/oscar?q=distribut), Brown University's HPC cluster.
+The pipeline was designed to slot directly into the structure of `lovoccs_pipe` (as of 2025), with the intent of eventual adoption as one of its primary data reduction steps, and was developed and run on [OSCAR](https://docs.ccv.brown.edu/oscar?q=distribut), Brown University's HPC cluster.
 
 A full technical write-up of methodology, validation, and limitations is available in my [dissertation](https://repository.library.brown.edu/studio/item/bdr:fntvtnsr/).
 
