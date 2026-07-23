@@ -43,10 +43,10 @@ Results were validated against independent ICL studies of both the same target c
 
 ```
 .
-├── src/                  # Core pipeline modules
 ├── config/               # Configuration files
 ├── notebooks/            # Exploratory analysis & some results
 ├── scripts/              # SLURM job submission scripts
+├── src/                  # Core pipeline modules
 ├── visuals/              # Some result plots
 ├── environment.yml       # Python environment specification
 ├── run_steps_Gen3.sh     # Base shell script from which to copy templated per-cluster scripts and run ICL measurement
