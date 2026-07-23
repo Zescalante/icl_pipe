@@ -12,7 +12,7 @@ Intracluster light is a diffuse, low surface brightness collection of stars boun
 
 This project addresses that measurement problem using an **iterative composite modeling approach**, built from the ground up on top of data products from the [LoVoCCS data reduction pipeline](https://github.com/astroenglert/lovoccs_pipe). The primary goal is to test whether ICL correlates reliably with host cluster halo mass across a subset of LoVoCCS clusters.
 
-The pipeline was designed to slot directly into the structure of the [lovoccs_pipe](https://github.com/astroenglert/lovoccs_pipe) (as of 2025), with the intent of eventual adoption as one of its primary data reduction steps, and was developed and run on [OSCAR](https://docs.ccv.brown.edu/oscar?q=distribut), Brown University's HPC cluster.
+The pipeline was designed to slot directly into the structure of the `lovoccs_pipe` (as of 2025), with the intent of eventual adoption as one of its primary data reduction steps, and was developed and run on [OSCAR](https://docs.ccv.brown.edu/oscar?q=distribut), Brown University's HPC cluster.
 
 A full technical write-up of methodology, validation, and limitations is available in my [dissertation](https://repository.library.brown.edu/studio/item/bdr:fntvtnsr/).
 
@@ -35,7 +35,7 @@ The pipeline follows these broad steps:
    - Corrected 1D surface brightness profiles and color profiles.
    - Fractional luminosity contribution of ICL to total cluster light.
 
-Results were validated against independent ICL studies of both the same target clusters, and clusters of similar redshift and dynamical environment. A secondary method of measurement was utilized for comparison, applying the [transfer-learning based ML model from Canepa et al.](https://github.com/lpcan/MICL/tree/v1.0).
+Results were validated against independent ICL studies of both the same target clusters, and clusters of similar redshift and dynamical environment. A secondary method of measurement was utilized for comparison, applying the [transfer-learning based ML model](https://github.com/lpcan/MICL/tree/v1.0) from Canepa et al.
 
 ---
 
