@@ -76,7 +76,7 @@ bash run_steps_Gen3.sh
 
 ## Example Output
 
-<img src="A3822_r_sb_contours_fullres_irg_cropped_final_1.jpg" width="40%" /> <img src="A3822_surface_brightness_1d_final.jpg" width="50%" />
+<img src="A3822_r_sb_contours_fullres_irg_cropped_final_1.jpg" width="38%" /> <img src="A3822_surface_brightness_1d_final.jpg" width="52%" />
 
 ---
 
